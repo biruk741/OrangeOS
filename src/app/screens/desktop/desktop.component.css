@@ -35,3 +35,21 @@
 .stack-top{
   z-index: 9;
 }
+.desktop-icons{
+  width: 200px;
+  height: 100%;
+  padding: 50px;
+  box-shadow: none;
+  flex-wrap: wrap;
+  display: flex;
+  align-content: flex-start;
+  /* justify-content: center; */
+}
+app-app-icon{
+  max-height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.app-displayer{
+  pointer-events:none
+}

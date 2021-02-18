@@ -1,12 +1,19 @@
 <div class="holder">
 
   <div class="content">
-    <img class="box bg" src="assets/bg1.jpg">
+    <img class="box bg" src="assets/bg2.jpg">
     <div class="box stack-top">
+      <div class="box desktop-icons">
+        <app-app-icon [app]="app" *ngFor="let app of apps">
 
+        </app-app-icon>
+      </div>
+      <div class="app-displayer box stack-top">
+
+      </div>
     </div>
   </div>
 
 
-  <div class="taskbar"></div>
+  <app-taskbar class="taskbar"></app-taskbar>
 </div>
