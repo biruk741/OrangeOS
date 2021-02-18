@@ -11,12 +11,12 @@ export class DesktopComponent implements OnInit {
 
   background: string;
   apps: App[] = [
-    {name:"Chrome",icon:"assets/chrome.png"},
-    {name:"VS Code",icon:"assets/vscode.png"},
-    {name:"Calculator",icon:"assets/calculator.png"},
-    {name:"Explorer",icon:"assets/folder.png"},
-
+    { name: "Chrome", icon: "assets/chrome.png" },
+    { name: "VS Code", icon: "assets/vscode.png" },
+    { name: "Calculator", icon: "assets/calculator.png" },
+    { name: "Explorer", icon: "assets/folder.png" },
   ];
+  openApps: App[] = [];
 
   constructor() { }
 
@@ -25,5 +25,13 @@ export class DesktopComponent implements OnInit {
 
   getBackground(): string {
     return "assets/bg1.jpg"
+  }
+  openApp(name) {
+    this.openApps.push(
+      this.apps.find(app => app.name == name)
+    )
+  }
+  closeApp(index){
+    this.openApps.splice(index,1);
   }
 }

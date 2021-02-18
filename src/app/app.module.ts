@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { DesktopComponent } from './screens/desktop/desktop.component';
 import { AppIconComponent } from './widgets/app-icon/app-icon.component';
 import { TaskbarComponent } from './widgets/taskbar/taskbar.component';
+import { ChromeAppComponent } from './apps/chrome-app/chrome-app.component';
+import { AngularDraggableModule } from 'angular2-draggable';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,15 @@ import { TaskbarComponent } from './widgets/taskbar/taskbar.component';
     LoginComponent,
     DesktopComponent,
     AppIconComponent,
-    TaskbarComponent
+    TaskbarComponent,
+    ChromeAppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AngularDraggableModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

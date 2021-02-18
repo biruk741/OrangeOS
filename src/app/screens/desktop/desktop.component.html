@@ -4,16 +4,17 @@
     <img class="box bg" src="assets/bg2.jpg">
     <div class="box stack-top">
       <div class="box desktop-icons">
-        <app-app-icon [app]="app" *ngFor="let app of apps">
+        <app-app-icon (click)="openApp('Chrome')" [app]="app" *ngFor="let app of apps">
 
         </app-app-icon>
       </div>
-      <div class="app-displayer box stack-top">
-
+      <div *ngFor="let app of openApps;index as i" ngDraggable ngResizable class="app-displayer card stack-top">
+        <app-chrome-app (close)="closeApp(i)"></app-chrome-app>
       </div>
+
     </div>
   </div>
 
 
-  <app-taskbar class="taskbar"></app-taskbar>
+  <app-taskbar  class="taskbar"></app-taskbar>
 </div>

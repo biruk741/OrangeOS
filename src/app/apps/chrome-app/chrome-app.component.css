@@ -1,0 +1,67 @@
+.window {
+  min-width: 700px;
+  min-height: 500px;
+  width: 800px;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  width: 100%;
+  flex: 1;
+  display: flex;
+}
+
+.top-bar {
+  background-color: #eee;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 5px 10px 5px 30px;
+
+}
+
+.top-bar svg {
+  width: 30px;
+  height: 30px;
+}
+
+.app-buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  justify-content: center;
+}
+.field{
+  width: 100%;
+}
+.field span{
+  height: 30px;
+}
+
+.title input {
+  width: 100%;
+  height: 30px;
+}
+
+.title {
+  flex: 1;
+  height: 100%;
+  margin-bottom: 0px;
+}
+
+.app-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a svg:hover{
+  filter:invert(46%) sepia(99%) saturate(1930%) hue-rotate(184deg) brightness(99%) contrast(93%);
+}
+iframe{
+  width: 100%;
+  flex: 1;
+}

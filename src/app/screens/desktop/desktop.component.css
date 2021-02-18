@@ -51,5 +51,14 @@ app-app-icon{
   margin-bottom: 20px;
 }
 .app-displayer{
-  pointer-events:none
+  pointer-events: none;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+.app-displayer *{
+  pointer-events: visibleStroke;
+}
+.app-displayer:hover{
+  z-index: 100;
 }

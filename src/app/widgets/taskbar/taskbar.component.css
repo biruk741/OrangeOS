@@ -1,6 +1,6 @@
 .left,.right{
   height: 100%;
-  min-width: 200px;
+  /* min-width: 200px; */
 }
 .holder{
   width: 100%;
@@ -25,10 +25,12 @@
   flex-direction:row;
 }
 .divider{
-  width: 2px;
+  width: 2px!important;
   background-color: rgba(255, 255, 255, 0.151);
   margin: 0px 20px;
 }
 .item{
-  margin: 0px 20px 0px 20px;
+  margin: 0px 10px 0px 10px;
+  max-width: 50px;
+  height: 100%;
 }
