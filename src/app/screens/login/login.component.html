@@ -1,0 +1,28 @@
+<div class="holder">
+  <div class=" card credential" id="login">
+    <div class="profile">
+
+    </div>
+    <div class="field">
+      <label class="label">Username</label>
+      <div class="control has-icons-left has-icons-right">
+        <input [(ngModel)]="username" class="input" name="username" type="text" placeholder="Username">
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+      </div>
+      <p *ngIf="false" class="help is-danger">This username does not exist</p>
+    </div>
+    <div class="field" id="password">
+      <label class="label">Password</label>
+
+      <p class="control has-icons-left">
+        <input class="input" [(ngModel)]="password" name="password" type="password" placeholder="Password">
+        <span class="icon is-small is-left">
+          <i class="fas fa-lock"></i>
+        </span>
+      </p>
+    </div>
+    <button (click)="loginClicked()" class="button is-primary">Login</button>
+  </div>
+</div>

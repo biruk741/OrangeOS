@@ -1,0 +1,25 @@
+.holder{
+  display: flex;
+  align-items: center;
+  height: 100%!important;
+  justify-content: center;
+}
+.credential{
+  padding: 40px;
+  display: flex;
+  width: 40%;
+  margin: 300px 0px 300px 0px;
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.field{
+  width: 100%;
+}
+.profile{
+  height: 200px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.103);
+  border-radius: 200px;
+}
